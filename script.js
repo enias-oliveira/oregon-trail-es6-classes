@@ -77,7 +77,7 @@ class Wagon {
   }
 
   shouldQuarantine () {
-    return this.passengers.some(passenger => passenger.isHealthy)
+    return this.passengers.some(passenger => !passenger.isHealthy)
   }
 
   totalFood () {
